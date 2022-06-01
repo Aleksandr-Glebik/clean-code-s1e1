@@ -16,11 +16,6 @@
 .header-link {
   font-family: fantasy, cursive;
 }
-
-@media (max-width:768px) {
-  .header { text-align: center;
-  }
-}
 .main-display-center {
   display: block;
   width: 500px;
@@ -56,6 +51,7 @@
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .title,
 .label[for="new-task"] {
@@ -97,7 +93,6 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,7 +100,6 @@
 .list-item > * {
   vertical-align: middle;
 }
-
 .list-item > .input[type="checkbox"] {
   margin: 0 10px;
 }
@@ -137,12 +131,19 @@
 .list .list-item .input[type="text"] {
   display:none
 }
-
 .list .list-item.edit-mode .input[type="text"] {
   display:inline-block;
   width:224px
 }
-
 .list .list-item.edit-mode .label {
   display:none;
 }
+
+
+@media (max-width:768px) {
+
+  .header {
+    text-align: center;
+  }
+
+  }
